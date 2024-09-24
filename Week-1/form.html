@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+</head>
+
+<body style="background-color: lightblue;">
+    <h1>Registration form</h1>
+    <form action="">
+        <table>
+
+            <!-- name -->
+
+            <tr>
+                <th><label>FirstName :-</label></th>
+                <td><input type="text" placeholder="Enter your FirstName.."></td>
+            </tr>
+            <tr>
+                <th><label>MiddleName :-</label></th>
+                <td><input type="text" placeholder="Enter your MiddleName.."></td>
+            </tr>
+            <tr>
+                <th> <label>LastName :-</label></th>
+                <td><input type="text" placeholder="Enter your LastName.."></td>
+            </tr>
+
+            <!-- coures detail  -->
+            <tr>
+                <th><label for="">Course :</label></th>
+                <td>
+                    <select name="Course">
+                        <option value="intern">BCA</option>
+                        <option value="intern">B.Tech</option>
+
+                        <option value="intern">BBA</option>
+                        <option value="intern">BCOM</option>
+                        <option value="intern">BA</option>
+
+                    </select>
+                </td>
+            </tr>
+
+            <!-- Gender detail -->
+            <tr>
+                <th> <label for="Gender">Gender:-</label></th>
+                <td><input type="radio" id="male" name="Gender">Male
+                    <input type="radio" id="Female" name="Gender">Female
+                    <input type="radio" id="Other" name="Gender">Other
+
+                </td>
+            </tr>
+
+            <tr>
+                <th><label for="">Phone:-</label></th>
+                <td><input type="number" value="+91" placeholder="+91  0123456789" max="10">
+                    <!-- <input type="number"> -->
+                </td>
+            </tr>
+
+            <tr>
+                <th> <label>Address:-</label></th>
+                <td> <textarea name="" id="" cols="30" rows="5"></textarea></td>
+            </tr>
+
+            <tr>
+                <th> <label>Email :-</label></th>
+                <td><input type="email" placeholder="ex-xyz@gmail.com"></td>
+            </tr>
+
+            <tr>
+                <th> <label>Password:-</label></th>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <th> <label>Re-Type Password:-</label></th>
+                <td><input type="password" name="Re-Type password"></td>
+            </tr>
+        </table>
+        &nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="submit">
+
+    </form>
+</body>
+
+</html>
