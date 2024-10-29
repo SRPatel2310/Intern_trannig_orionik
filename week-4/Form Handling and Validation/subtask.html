@@ -47,10 +47,19 @@
     <div class="container">
       <form action="" onsubmit="return validateform()">
         <h1>login</h1>
-        <input type="text" id="username" placeholder="Enter your username" />
 
-        <input type="password" id="Password" placeholder="Password." />
-
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          autocomplete="current-password"
+        />
+        <input
+          type="password"
+          id="password"
+          autocomplete="current-password"
+          placeholder="Enter your password"
+        />
         <button>submit</button>
       </form>
     </div>
@@ -58,8 +67,11 @@
       let username = document.getElementById("username");
       let password = document.getElementById("password");
       function validateform() {
-        if (username.value == " ") {
-          console.log("username Empty");
+        if (username.value == "") {
+          alert("username is empty");
+        }
+        if (password.value == "") {
+          alert("Password is empty");
         }
         return true;
       }
