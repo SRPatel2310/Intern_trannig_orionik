@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>subtask-3</title>
+  </head>
+  <body>
+    <div id="result"></div>
+    <script>
+      //  Practice exercise - Fetch data from two different APIs sequentially using async/await and display the combined results.
+
+      async function multidata() {
+        try {
+          const data = {
+            response: await fetch("https://jsonplaceholder.typicode.com/todos"),
+            response1: await fetch(
+              "https://jsonplaceholder.typicode.com/albums"
+            ),
+          };
+
+          const data2 = {
+            muldata: await data.response.json(),
+            muldata1: await data.response1.json(),
+          };
+
+          const result = document.getElementById("result");
+
+          result.innerHTML = `
+            <h1>**********************Todos******************</h1>
+            ${data2.muldata
+              .map(
+                (item) => `
+                <p>User ID: ${item.userId}</p>
+                <h3>ID: ${item.id}</h3>
+                <li>Title: ${item.title}</li>
+              `
+              )
+              .join("")}
+            <h1>***************************Albums************************</h1>
+            ${data2.muldata1
+              .map(
+                (item) => `
+                <p>User ID: ${item.userId}</p>
+                <h3>ID: ${item.id}</h3>
+                <li>Title: ${item.title}</li>
+              `
+              )
+              .join("")}
+          `;
+          console.log(data2);
+          return data2;
+        } catch (error) {
+          console.log("ERROR now :", error);
+        }
+      }
+      multidata();
+    </script>
+  </body>
+</html>

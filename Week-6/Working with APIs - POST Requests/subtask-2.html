@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="" id="form">
+      <input type="text" id="username" placeholder="Username" />
+      <input type="email" id="email" placeholder="Email" />
+      <button id="submit">submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+      document
+        .getElementById("form")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const data = {
+            name: document.getElementById("username").value,
+            email: document.getElementById("email").value,
+          };
+          fetch("https://jsonplaceholder.typicode.com/users", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(data),
+          })
+            .then((Response) => Response.json())
+            .then((result) => {
+              console.log(result);
+              document.getElementById("result").innerHTML = `
+              
+              <h3>Submitted success:</h3>
+              <p>Name:${data.name}</p>
+              <p>Email:${data.email}</p>`;
+            })
+            .catch(() => {
+              document.getElementById("result").textContent = "submission fail";
+            });
+        });
+    </script>
+  </body>
+</html>
