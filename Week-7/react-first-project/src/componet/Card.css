@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+   
+}
+.main-contain{
+   
+    margin-bottom: 10px;
+    width: 350px;
+    height: 430px;
+    border: 2px solid red;
+   padding: 10px;
+    display: inline-block;
+   margin-left: 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color:#cbf3f0 ;
+
+}
+h4{
+    padding: 5px;
+    text-transform: capitalize;
+}
+img{
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+p{
+    /* width: 400px; */
+    text-align: justify;
+}

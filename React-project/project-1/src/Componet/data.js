@@ -1,0 +1,92 @@
+export const furnitureProducts = [
+  {
+    id: 1,
+    title: "Wooden Dining Table",
+    img: "https://thetimberguy.com/cdn/shop/files/Mid-Century-Wooden-Dining-table-Armchair-Bench-furniture-set-with-Rattan-cane-Choose-your-combination_800x.jpg?v=1733767688",
+    price: 12000,
+  },
+  {
+    id: 2,
+    title: "Comfortable Sofa Set",
+    img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQYPNgytVWb7rzptrf-CK9HKH41w_2WElYiqVs35cfIgF8f94AXWbzDPoC2N0CnzmF-euEBTa1gUHIAJ-NrYnwSG7GFb4RVdwSc309UdoHQOvJAC9Wo8Lhf3g",
+    price: 25000,
+  },
+  {
+    id: 3,
+    title: "Office Chair",
+    img: "https://thetimberguy.com/cdn/shop/files/French-Vintage-solid-wood-chair-with-rattan-cane-work-seat-cushion_500x.jpg?v=1686506875",
+    price: 8000,
+  },
+  {
+    id: 4,
+    title: "King Size Bed",
+    img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQpHFbzmWzodEg4Myp3Himdi43vAPrau4twXbMmeh2N_2Slkyc0evJj7FAyEQ8Ybfwl-C3WmZq2A5e3e_XtfeQKs-0sfHLmBkOfx9iQpDQ",
+    price: 30000,
+  },
+  {
+    id: 5,
+    title: "Bookshelf",
+    img: "https://thetimberguy.com/cdn/shop/products/Solid-Sheesham-wood-display-glass-cabinet-crockery-cabinet-bookshelf-with-Double-door_1200x.jpg?v=1638122944",
+    price: 5000,
+  },
+  {
+    id: 6,
+    title: "Coffee Table",
+    img: "https://ik.imagekit.io/2xkwa8s1i/img/coffee-tables/praline/1.jpg?tr=w-1200",
+    price: 6000,
+  },
+  {
+    id: 7,
+    title: "Study Desk",
+    img: "https://m.media-amazon.com/images/I/41NnrihoAHL._SX300_SY300_QL70_FMwebp_.jpg",
+    price: 9000,
+  },
+  {
+    id: 8,
+    title: "Queen Size Bed",
+    img: "https://m.media-amazon.com/images/I/41q0XDR3hHL._SX300_SY300_QL70_FMwebp_.jpg",
+    price: 20000,
+  },
+  {
+    id: 9,
+    title: "Rocking Chair",
+    img: "https://m.media-amazon.com/images/I/51CHLupbF8L._SX300_SY300_QL70_FMwebp_.jpg",
+    price: 7000,
+  },
+  {
+    id: 10,
+    title: "TV Unit",
+    img: "https://m.media-amazon.com/images/I/81qGQQoaXcL._SX679_.jpg",
+    price: 15000,
+  },
+  {
+    id: 11,
+    title: "Wardrobe",
+    img: "https://ik.imagekit.io/2xkwa8s1i/img/wardrobes/r1/WWRB4DMH1ORGANZAPCWR1/1.jpg?tr=w-1200",
+    price: 28000,
+  },
+  {
+    id: 12,
+    title: "Side Table",
+    img: "https://cdn.pixelspray.io/v2/black-bread-289bfa/TIw66q/wrkr/t.resize(h:1240,w:1400)/data/Westelm/17072023img/8624925_4.jpg",
+    price: 3000,
+  },
+  {
+    id: 13,
+    title: "Recliner Sofa",
+    img: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRHRIMx43ElKfQdiXLynM8Sp1PdBNPn3DUWqlQrNi6ZydBP-Foo7AStmBkrDyhSglmgNt-kJWG5o1Ri2yPOMzGVlwsuou5fECurbDNayXQ",
+    price: 45000,
+  },
+  {
+    id: 14,
+    title: "Dining Chair Set",
+    img: "https://thetimberguy.com/cdn/shop/products/Solid-Sheesham-Wood-Round-Dining-Table-Furniture-Set-with-4-Chairs_2eb7611a-41c3-4b51-83b7-4f5d70f740ce_1200x.jpg?v=1628791702",
+    price: 12000,
+  },
+  {
+    id: 15,
+    title: "Wall Shelf",
+    img: "https://cdn.shopify.com/s/files/1/0632/2526/6422/files/1_98e1ae14-93cf-4dba-b73e-6f1f084044cd.jpg?v=1729202302&width=600",
+    price: 4000,
+  },
+];
